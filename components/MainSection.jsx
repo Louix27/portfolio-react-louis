@@ -59,8 +59,7 @@ const MainSection = ({ language }) => {
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
           <div className="mt-12 md:mt-0 bg-gradient-to-b from-teal-500 rounded-full w-72 h-72 md:w-96 md:h-96 lg:w-112 lg:h-112 relative overflow-hidden md:ml-48">
-            <Image src="/louis.png" layout="fill" objectFit="cover" alt="Louis Palié" />
-          </div>
+          <Image src={`${process.env.NEXT_PUBLIC_BASE_URL}/louis.png`} layout="fill" objectFit="cover" alt="Louis Palié" />          </div>
         </motion.div>
       </div>
     </section>
