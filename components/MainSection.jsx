@@ -1,7 +1,6 @@
 import { FaLaptopCode } from "react-icons/fa";
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 import Image from "next/image";
-import deved from "../public/louis.png";
 import { motion } from "framer-motion";
 
 const MainSection = ({ language }) => {
@@ -60,7 +59,7 @@ const MainSection = ({ language }) => {
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
           <div className="mt-12 md:mt-0 bg-gradient-to-b from-teal-500 rounded-full w-72 h-72 md:w-96 md:h-96 lg:w-112 lg:h-112 relative overflow-hidden md:ml-48">
-            <Image src={deved} layout="fill" objectFit="cover" alt="Louis Palié" />
+            <Image src="/louis.png" layout="fill" objectFit="cover" alt="Louis Palié" />
           </div>
         </motion.div>
       </div>
