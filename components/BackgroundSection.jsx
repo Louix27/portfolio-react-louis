@@ -1,5 +1,4 @@
-// components/BackgroundSection.jsx
-import Fade from "react-reveal/Fade";
+import { motion } from 'framer-motion';
 
 const BackgroundSection = ({ language }) => {
     const timelineData = [
@@ -9,7 +8,7 @@ const BackgroundSection = ({ language }) => {
         },
         {
             year: "2023-2024",
-            text: language === "fr" ? "IUT de Lens (62300) Première année de BUT Informatique" : "Second year of Computer Science",
+            text: language === "fr" ? "IUT de Lens (62300) Première année de BUT Informatique" : "First year of Computer Science",
         },
         {
             year: "2020-2023",
@@ -20,7 +19,7 @@ const BackgroundSection = ({ language }) => {
     return (
         <section id="parcours" className="min-h-screen flex items-center justify-center bg-gray-900">
             <div className="max-w-4xl mx-auto text-center">
-                <Fade bottom>
+                <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
                     <h2 className="text-5xl py-3 text-teal-400 font-medium">
                         {language === "fr" ? "Mon Parcours" : "My Background"}
                     </h2>
@@ -37,7 +36,7 @@ const BackgroundSection = ({ language }) => {
                             </div>
                         ))}
                     </div>
-                </Fade>
+                </motion.div>
             </div>
         </section>
     );
