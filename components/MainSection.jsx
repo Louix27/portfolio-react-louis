@@ -7,14 +7,14 @@ const MainSection = ({ language }) => {
   const cvFileName = language === "fr" ? "cv_fr.pdf" : "cv_en.pdf";
 
   return (
-    <section id="accueil" className="min-h-screen flex items-center justify-center">
-      <div className="flex flex-col md:flex-row items-center">
-        <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
-          <div className="text-left md:mr-24">
-            <h2 className="text-6xl py-3 text-teal-400 font-medium md:text-7xl">
+    <section id="accueil" className="min-h-screen flex items-center justify-center px-4">
+      <div className="flex flex-col md:flex-row items-center w-full max-w-6xl">
+        <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} className="w-full md:w-1/2">
+          <div className="text-left md:mr-16 lg:mr-24">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl py-3 text-teal-400 font-medium">
               Palié Louis
             </h2>
-            <h3 className="text-3xl py-3 text-white md:text-4xl flex items-center">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl py-3 text-white flex items-center">
               {language === "fr" ? (
                 <>
                   Jeune Développeur <FaLaptopCode className="text-teal-400 ml-3" />
@@ -25,7 +25,7 @@ const MainSection = ({ language }) => {
                 </>
               )}
             </h3>
-            <p className="text-lg py-6 leading-9 text-gray-200 max-w-2xl md:text-2xl">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl py-6 leading-9 text-gray-200 max-w-2xl">
               {language === "fr" ? (
                 <>
                   Louis, 19 ans, jeune développeur. <br />
@@ -40,7 +40,7 @@ const MainSection = ({ language }) => {
                 </>
               )}
             </p>
-            <div className="text-6xl flex gap-10 md:gap-20 py-4 text-gray-400 items-center">
+            <div className="text-4xl sm:text-5xl md:text-6xl flex gap-6 sm:gap-10 md:gap-20 py-4 text-gray-400 items-center">
               <a href="https://github.com/Louix27" target="_blank" rel="noopener noreferrer">
                 <AiFillGithub className="text-teal-400" />
               </a>
@@ -50,14 +50,14 @@ const MainSection = ({ language }) => {
               <a href="mailto:louis.palie@gmail.com">
                 <AiFillMail className="text-teal-400" />
               </a>
-              <a href={`/${cvFileName}`} download={cvFileName} className="px-6 py-2 border-2 border-teal-400 text-teal-400 rounded-lg text-lg hover:bg-teal-400 hover:text-white transition-colors">
+              <a href={`/${cvFileName}`} download={cvFileName} className="px-4 sm:px-6 py-2 border-2 border-teal-400 text-teal-400 rounded-lg text-base sm:text-lg hover:bg-teal-400 hover:text-white transition-colors">
                 {language === "fr" ? "Télécharger mon CV" : "Download my CV"}
               </a>
             </div>
           </div>
         </motion.div>
-        <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
-          <div className="mt-12 md:mt-0 bg-gradient-to-b from-teal-500 rounded-full w-72 h-72 md:w-96 md:h-96 lg:w-112 lg:h-112 relative overflow-hidden md:ml-48">
+        <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} className="w-full md:w-1/2 mt-12 md:mt-0">
+          <div className="bg-gradient-to-b from-teal-500 rounded-full w-72 h-72 md:w-96 md:h-96 lg:w-112 lg:h-112 relative overflow-hidden mx-auto md:ml-16 lg:ml-24">
             <Image src="/louis.png" layout="fill" objectFit="cover" alt="Louis Palié" />
           </div>
         </motion.div>
