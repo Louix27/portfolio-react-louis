@@ -4,15 +4,15 @@ const BackgroundSection = ({ language }) => {
     const timelineData = [
         {
             year: "2024-2025",
-            text: language === "fr" ? "IUT de Lens (62300) Deuxième année de BUT Informatique" : "Second year of Computer Science",
+            text: language === "fr" ? "IUT de Lens (62300) Deuxième année de BUT Informatique" : "IUT of Lens (62300) Second year of Computer Science",
         },
         {
             year: "2023-2024",
-            text: language === "fr" ? "IUT de Lens (62300) Première année de BUT Informatique" : "First year of Computer Science",
+            text: language === "fr" ? "IUT de Lens (62300) Première année de BUT Informatique" : "IUT of Lens (62300) First year of Computer Science",
         },
         {
             year: "2020-2023",
-            text: language === "fr" ? "Lycée Arthur Rimbaud (59450) Baccalauréat général Spécialités: Mathématiques | NSI" : "High School Diploma Specialties: Mathematics | NSI",
+            text: language === "fr" ? "Lycée Arthur Rimbaud (59450) Baccalauréat général Spécialités: Mathématiques | NSI" : "Lycée Arthur Rimbaud (59450) General baccalaureate Specialties: Mathematics | NSI",
         },
     ];
 

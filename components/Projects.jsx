@@ -30,7 +30,7 @@ const Projects = ({ language }) => {
           ? "Juste Prix créé en Flask"
           : "Juste Prix created in Flask.",
       image: "/JustePrix.jpeg",
-      demoLink: "https://youtu.be/9Fj2l6frk7I", // Exemple
+      demoLink: "https://youtu.be/9Fj2l6frk7I", 
       sourceLink: "https://github.com/Louix27/JustePrix",
     },
     {
@@ -40,17 +40,17 @@ const Projects = ({ language }) => {
           ? "Portfolio créé en React JS."
           : "Portfolio created in React JS.",
       image: "/Portfolio.jpeg",
-      demoLink: "https://louix27.github.io/Portfolio", // Exemple
-      sourceLink: "https://github.com/Louix27/Portfolio",
+      demoLink: "https://youtu.be/0KG6v2oFfus", 
+      sourceLink: "https://github.com/Louix27/portfolio-react-louis",
     },
     {
       title: "Flappy Bird",
       main:
         language === "fr"
-          ? "Flappy Bird créé en java"
-          : "Flappy Bird created in java.",
+          ? "Flappy Bird créé en java (Projet personnel)."
+          : "Flappy Bird created in java (Personal project).",
       image: "/FlappyBird.jpeg",
-      demoLink: "https://louix27.github.io/Portfolio", // Exemple
+      demoLink: "https://louix27.github.io/Portfolio", 
       sourceLink: "https://github.com/Louix27/Portfolio",
     },
     {
@@ -60,8 +60,8 @@ const Projects = ({ language }) => {
           ? "Site réalisé en PHP et Laravel"
           : "Site made in PHP and Laravel.",
       image: "/Mamy.png",
-      demoLink: "https://louix27.github.io/Portfolio", // Exemple
-      sourceLink: "https://github.com/Louix27/Portfolio",
+      demoLink: "https://youtu.be/wAxAk_WIYWQ", 
+      sourceLink: "https://github.com/Louix27/mamyLens",
     },
   ];
 
