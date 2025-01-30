@@ -4,7 +4,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const MainSection = ({ language }) => {
-  // Déterminez le nom du fichier PDF en fonction de la langue
   const cvFileName = language === "fr" ? "cv_fr.pdf" : "cv_en.pdf";
 
   return (
