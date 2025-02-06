@@ -11,7 +11,6 @@ const Projects = ({ language }) => {
           : "First website created in HTML, CSS, and JS.",
       image: "/Billet.jpeg",
       demoLink: "https://www.youtube.com/watch?v=nWaoxYkROQc",
-      sourceLink: "https://github.com/Louix27/Billetterie-JO-PremierSiteWeb",
     },
     {
       title: "Memory",
@@ -21,17 +20,15 @@ const Projects = ({ language }) => {
           : "Memory created in JavaFX.",
       image: "/Memory.jpeg",
       demoLink: "https://www.youtube.com/shorts/rXygzep91ws",
-      sourceLink: "https://github.com/Louix27/Memory",
     },
     {
       title: "Juste Prix",
       main:
         language === "fr"
-          ? "Juste Prix créé en Flask"
-          : "Juste Prix created in Flask.",
+          ? "Juste Prix créé en Flask, connecté à une API."
+          : "Juste Prix created in Flask, connected to an API.",
       image: "/JustePrix.jpeg",
       demoLink: "https://youtu.be/9Fj2l6frk7I", 
-      sourceLink: "https://github.com/Louix27/JustePrix",
     },
     {
       title: "Portfolio",
@@ -41,27 +38,24 @@ const Projects = ({ language }) => {
           : "Portfolio created in React JS.",
       image: "/Portfolio.jpeg",
       demoLink: "https://youtu.be/0KG6v2oFfus", 
-      sourceLink: "https://github.com/Louix27/portfolio-react-louis",
     },
     {
       title: "Flappy Bird",
       main:
         language === "fr"
-          ? "Flappy Bird créé en java (Projet personnel)."
-          : "Flappy Bird created in java (Personal project).",
+          ? "Flappy Bird créé en java."
+          : "Flappy Bird created in java.",
       image: "/FlappyBird.jpeg",
-      demoLink: "https://louix27.github.io/Portfolio", 
-      sourceLink: "https://github.com/Louix27/Portfolio",
+      demoLink: "https://youtube.com/shorts/743PXh-pcGo", 
     },
     {
       title: "Les recettes de MamyLens",
       main:
         language === "fr"
-          ? "Site réalisé en PHP et Laravel"
+          ? "Site réalisé en PHP et Laravel."
           : "Site made in PHP and Laravel.",
       image: "/Mamy.png",
       demoLink: "https://youtu.be/wAxAk_WIYWQ", 
-      sourceLink: "https://github.com/Louix27/mamyLens",
     },
   ];
 
@@ -82,7 +76,6 @@ const Projects = ({ language }) => {
               main={project.main}
               image={project.image}
               demoLink={project.demoLink}
-              sourceLink={project.sourceLink}
             />
           ))}
         </div>

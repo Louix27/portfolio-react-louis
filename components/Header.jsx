@@ -13,12 +13,13 @@ const Header = ({ language, toggleLanguage }) => {
   const controlHeader = () => {
     if (typeof window !== "undefined") {
       if (window.scrollY === 0) {
-      // si en haut de la page, afficher l'en-tête     
+        // if at the top of the page, show the header
+        setIsVisible(true);
       } else if (window.scrollY > lastScrollY) {
-        // si scroll vers le bas
+        // if scroll down hide the header
         setIsVisible(false);
       } else {
-        // si scroll vers le haut
+        // if scroll up show the header
         setIsVisible(true);
       }
       setLastScrollY(window.scrollY);
